@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Break</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="shortcut icon" href="imgs/chat-icon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!----------------------- NAVBAR ----------------------->
+    <nav class="navbar navbar-expand-md bg-black navbar-dark " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="/img/Logo.png" alt="Coffee" id="#logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/store.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/aboutus.html">Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!----------------------- CARROUSEL ----------------------->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Header1.jpg" class="d-block w-100 img-fluid" alt="Cafe" />
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Header2.jpg" class="d-block w-100 img-fluid" alt="Store" />
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Header3.jpg" class="d-block w-100 img-fluid" alt="Espresso" />
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Header4.jpg" class="d-block w-100 img-fluid" alt="Cafetera" />
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Header5.jpg" class="d-block w-100 img-fluid" alt="Coffee" />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ITEMS -->
+    <div id="productos">
+        <div class="container-lg p-4">
+
+            <div class="row pt-2">
+                <h3 class="text-center pb-5 pt-5 h1">Nuestros recomendados</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="img/Marostigana-Brasil.png" class="card-img-top" alt="Saula">
+                        <div class="card-body">
+                            <h3 class="card-text text-center">Marostigana - Brasil</h3>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="img/JuanValdez.png" class="card-img-top" alt="Juan Valdez">
+                        <div class="card-body">
+                            <h3 class="card-text text-center">Juan Valdez - Colombia</ph3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="img/Madarines-Australia.png" class="card-img-top" alt="madarines">
+                        <div class="card-body ">
+                            <h3 class="card-text text-center ">Madarines - Australia</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="img/SulDeMinas-Brasil.png" class="card-img-top" alt="madarines">
+                        <div class="card-body ">
+                            <h3 class="card-text text-center ">Sul De Minas - Brasil</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!------------------------------ FOOTER ------------------------------>
+
+        <div class="container-fluid " id="footer">
+            <div class="row bg-black ">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="index.html" class="logo" alt="Coffee Break" id="logopie">
+                        <img src="/img/Logo.png" /></a>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-white text-decoration-none">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li>Dirección: Av Dellepiane Norte 4178</li>
+                        <li>info@coffeebreak.com.ar</li>
+                        <li>Teléfono: 11-2775-0955</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="text-center mt-5 ps-2 pb-3" id="redes">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js " integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3 " crossorigin="anonymous "></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js " integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD " crossorigin="anonymous "></script>
+</body>
+
+</html>
