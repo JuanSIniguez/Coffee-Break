@@ -26,16 +26,18 @@ main {
   max-height: 25rem;
 }
 
-#redes a {
-  color: var(--cr);
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  line-height: 40px;
-  border-radius: 50%;
-  align-items: center;
-  vertical-align: center;
+#redes {
+  a {
+    color: var(--cr);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    vertical-align: center;
+  }
 }
 
 #productos {
@@ -44,9 +46,9 @@ main {
 
 #navbarSupportedContent > ul > li > a {
   text-decoration: none;
-  color: var(--cr);
+  color: black;
 }
 
 h3 {
   font-family: "Open Sans";
-} /*# sourceMappingURL=style.css.map */
+}
