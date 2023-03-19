@@ -1,0 +1,101 @@
+:root {
+  --gr: #3e4147;
+  --cr: #fffedf;
+  --ms: #dfba69;
+  --bl: #2a2c31;
+  --br: #5a2e2e;
+}
+
+* {
+  font-family: "Open Sans";
+  font-size: 14pt;
+  margin: 0;
+  padding: 0;
+  color: --bl;
+}
+
+main {
+  background-color: var(--cr);
+}
+
+.navbar-brand {
+  height: 15vh;
+}
+.navbar-brand img {
+  max-height: 15vh;
+}
+
+a.nav-link {
+  text-decoration: none;
+  font-size: 18pt;
+}
+
+.carousel .carousel-inner {
+  -o-object-fit: contain;
+  object-fit: contain;
+  overflow: hidden;
+}
+.carousel .carousel-inner img {
+  height: 85vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#redes a {
+  color: var(--cr);
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  line-height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  vertical-align: center;
+}
+
+#navbarSupportedContent > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  font-family: "Open Sans";
+}
+
+.container-fluid {
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card:focus .flip-card-back {
+    transform: rotateY(180deg);
+  }
+}
+.container-fluid .card img {
+  height: 15rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+  background-color: #3e4147;
+}
+.container-fluid .flip-card {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+.container-fluid .flip-card-inner {
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.container-fluid .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.container-fluid .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #3e4147;
+  color: white;
+  transform: rotateY(180deg);
+} /*# sourceMappingURL=style.css.map */
