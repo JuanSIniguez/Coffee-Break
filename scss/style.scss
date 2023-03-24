@@ -1,4 +1,19 @@
 $color-tarjeta: #3e4147;
+$primary: #ffeeec;
+$secondary: #626266;
+$h1-font-size: 3.5rem;
+$font-family-base: "Open Sans";
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 15rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 :root {
   --gr: #3e4147;
@@ -9,15 +24,14 @@ $color-tarjeta: #3e4147;
 }
 
 * {
-  font-family: "Open Sans";
   font-size: 14pt;
   margin: 0;
   padding: 0;
   color: --bl;
 }
 
-main {
-  background-color: var(--cr);
+body {
+  background-color: $primary;
 }
 
 .navbar-brand {
