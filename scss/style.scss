@@ -3,15 +3,7 @@ $primary: #ffeeec;
 $secondary: #626266;
 $h1-font-size: 3.5rem;
 $font-family-base: "Open Sans";
-
-$display-font-sizes: (
-  1: 5rem,
-  2: 15rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem,
-);
+$white-text: #ffeeec;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -23,19 +15,12 @@ $display-font-sizes: (
   --br: #5a2e2e;
 }
 
-* {
-  font-size: 14pt;
-  margin: 0;
-  padding: 0;
-  color: --bl;
-}
-
 body {
   background-color: $primary;
 }
 
 .navbar-brand {
-  height: 15vh;
+  height: 100%;
 
   img {
     max-height: 15vh;
@@ -81,43 +66,50 @@ h3 {
 }
 .container-fluid {
   .card {
+    background-color: $color-tarjeta;
     img {
       height: 15rem;
       object-fit: contain;
-      background-color: $color-tarjeta;
+    }
+    .card-text {
+      color: $white-text;
     }
   }
+}
 
-  .flip-card {
-    background-color: transparent;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-  }
+.flip-card {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
 
-  .flip-card-inner {
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
+.flip-card-inner {
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
-  .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background-color: $color-tarjeta;
-    color: white;
-    transform: rotateY(180deg);
-  }
-  /*   .flip-card:hover .flip-card-inner {
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: $color-tarjeta;
+  color: white;
+  transform: rotateY(180deg);
+}
+/*   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   .flip-card:focus .flip-card-back {
     transform: rotateY(180deg);
   } */
+
+#footer {
+  text-align: center;
 }
