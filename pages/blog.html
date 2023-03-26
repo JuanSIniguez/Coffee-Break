@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Break</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/scss/style.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" /> 
@@ -15,7 +15,7 @@
 <body>
     <!----------------------------NAVBAR ---------------------------->
 
-    <nav class="navbar navbar-expand-md bg-black navbar-dark " id="navbar">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark " id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand my-2" href="/index.html"><img src="/img/Logo.png" alt="Coffee" id="#logo" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,16 +24,32 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/index.html">Inicio</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/store.html">Tienda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/aboutus.html">Nosotros</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/store.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/pages/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/aboutus.html" aria-current="page">Nosotros</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!------------------------------ Migas de pan ------------------------------>
+
+    <nav style="--bs-breadcrumb-divider: '-';" aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item "><a class="h3" href="/index.html">Inicio</a></li>
+          <li class="breadcrumb-item h3 active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+
 
     <!------------------------------ BLOG ------------------------------>
 
@@ -140,8 +156,8 @@
     </div>
 
 
-            <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+            <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

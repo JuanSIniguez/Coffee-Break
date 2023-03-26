@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Break</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../scss/style.css" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/scss/style.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="shortcut icon" href="imgs/chat-icon.png" type="image/x-icon" />
 </head>
@@ -24,18 +24,32 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/index.html">Inicio</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/store.html">Tienda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/aboutus.html">Nosotros</a></li>
-                </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/pages/store.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/aboutus.html" aria-current="page">Nosotros</a>
+                    </li>
             </div>
         </div>
     </nav>
 
-<div class="container-fluid row">
+    <!------------------------------ Migas de pan ------------------------------>
+
+    <nav style="--bs-breadcrumb-divider: '-';" aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item "><a class="h3" href="/index.html">Inicio</a></li>
+          <li class="breadcrumb-item h3 active" aria-current="page">Tienda</li>
+        </ol>
+      </nav>
+
+    <div class="container-fluid row">
         <div class="col-3">
             <h3>Pagina de filtros</h3>
             <ul>
@@ -55,97 +69,99 @@
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
                         
-                        <img class="card-img-top img-size flip-card-front" src="img/Marostigana-Brasil.png"   alt="Saula">
+                        <img class="card-img-top img-size flip-card-front" src="/img/productos/new-england-blueberry.png"   alt="blueberry">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Obtenga la mejor experiencia de café con granos de café brasileños, tostados a una intensidad perfecta que desprenden aromas fuertes y amaderados. Con un sorbo, te engancharás y querrás más</p>
+                            <p class="card-text text-center fs-6">El café Blueberry Cobbler es una delicia única inspirada en un postre clásico del país. Nuestro café exclusivo está infundido con un dulce y jugoso sabor a bayas y un toque de especias.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-top img-size flip-card-front" src="img/JuanValdez.png"   alt="Juan Valdez">
+                        <img class="card-img-top img-size flip-card-front" src="/img/productos/new-england-chocolate.png"   alt="chocolate">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Disfruta de una taza de café perfectamente tostada y con un sabor intenso y aromático. Suave, nunca amarga y seguro que te dará el estímulo perfecto cada mañana</p>
+                            <p class="card-text text-center fs-6">Los ricos sabores de chocolate con leche y capuchino cremoso se mezclan con nuestro café exclusivo. El café Chocolate Cappuccino satisfará tanto a los amantes del chocolate como a los aficionados al café.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-top img-size flip-card-front" src="img/Madarines-Australia.png"   alt="madarines">
+                        <img class="card-img-top img-size flip-card-front" src="/img/productos/new-england-vainilla.png"   alt="new-england-vainilla">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestras mezclas únicas se tuestan a su gusto y son una mezcla de sabores que no encontrará en ningún otro lugar. Disfruta la frescura y el aroma de nuestros granos de café recién molidos y deliciosos sabores</p>
+                            <p class="card-text text-center fs-6">Vainilla suave y deliciosa en una suave mezcla de granos descafeinados de América del Sur y América Central de tostado medio. Para una alternativa refrescante.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-tope img-size flip-card-front" src="img/cafeimperial.png"  alt="madarines">
+                        <img class="card-img-tope img-size flip-card-front" src="/img/productos/new-englando-hazelnut.png"  alt="new-englando-hazelnut">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestro café se cosecha en el norte de Brasil, donde es conocido por su sabor único y delicioso. Nuestros granos de alta calidad garantizan una taza de café rica y equilibrada en todo momento.</p>
+                            <p class="card-text text-center fs-6">Un café tostado medio, que también es nuestro sabor más popular: encontrará mucho para disfrutar. El rico sabor a nuez de nuestro café Hazelnut Crème crea una experiencia de café suave con un toque de dulzura.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-tope img-size flip-card-front" src="img/cafeimperial.png"  alt="madarines">
+                        <img class="card-img-tope img-size flip-card-front" src="/img/productos/la-colombe-early-riser.png"  alt="Early-Riser">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestro café se cosecha en el norte de Brasil, donde es conocido por su sabor único y delicioso. Nuestros granos de alta calidad garantizan una taza de café rica y equilibrada en todo momento.</p>
+                            <p class="card-text text-center fs-6">Un nuevo día trae un nuevo potencial. Las posibilidades que surgen con nosotros cada mañana. Esa oportunidad se refleja en este café ruandés de tueste medio. Los sabores de frutas de hueso maduros enclavados en caramelo dulce y un cuerpo cremoso y completo lo ayudan a comenzar de nuevo.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-tope img-size flip-card-front" src="img/cafeimperial.png"  alt="madarines">
+                        <img class="card-img-tope img-size flip-card-front" src="/img/productos/la-colombe-corsica.png"  alt="Corsica">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestro café se cosecha en el norte de Brasil, donde es conocido por su sabor único y delicioso. Nuestros granos de alta calidad garantizan una taza de café rica y equilibrada en todo momento.</p>
+                            <p class="card-text text-center fs-6">Con tonos de chocolate oscuro y un intenso sabor a café. Llamado así por una antigua isla en el Mediterráneo, las notas de cacao de Córcega se combinan a la perfección con leche o por sí solas, perfecto para una mañana plena.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-tope img-size flip-card-front" src="img/cafeimperial.png"  alt="madarines">
+                        <img class="card-img-tope img-size flip-card-front" src="/img/productos/la-colombe-hijo-del-sol.png"  alt="Hijo del sol">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestro café se cosecha en el norte de Brasil, donde es conocido por su sabor único y delicioso. Nuestros granos de alta calidad garantizan una taza de café rica y equilibrada en todo momento.</p>
+                            <p class="card-text text-center fs-6">Desde la frontera sur de México, donde el sol da vida a cascadas y antiguas ruinas mayas. Este café es tan vigorizante como la misma luz del sol. Una fusión de sabores dulces, afrutados y ricos en nueces que ilumina tu día con cada sorbo que pasa.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-tope img-size flip-card-front" src="img/cafeimperial.png"  alt="madarines">
+                        <img class="card-img-tope img-size flip-card-front" src="/img/productos/la-colombe-lyon.png"  alt="lyon">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestro café se cosecha en el norte de Brasil, donde es conocido por su sabor único y delicioso. Nuestros granos de alta calidad garantizan una taza de café rica y equilibrada en todo momento.</p>
+                            <p class="card-text text-center fs-6">Lyon es un café con una naturaleza suave, tanto en sabor como en espíritu. Las notas dulces de nuez adquieren un sabor suave y tostado que lo convierte en una taza fácil de beber.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-tope img-size flip-card-front" src="img/cafeimperial.png"  alt="madarines">
+                        <img class="card-img-tope img-size flip-card-front" src="/img/productos/lavazza-crema-e-aroma.png"  alt="Crema e aroma">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestro café se cosecha en el norte de Brasil, donde es conocido por su sabor único y delicioso. Nuestros granos de alta calidad garantizan una taza de café rica y equilibrada en todo momento.</p>
+                            <p class="card-text text-center fs-6">Una mezcla de variedades Arábica de América Central y del Sur y cafés Robusta africanos crea un tostado medio intenso y suave. Probarás la suave terrosidad con cada sorbo equilibrado.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-tope img-size flip-card-front" src="img/cafeimperial.png"  alt="madarines">
+                        <img class="card-img-tope img-size flip-card-front" src="/img/productos/lavazza-rossa.png"  alt="Rossa">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestro café se cosecha en el norte de Brasil, donde es conocido por su sabor único y delicioso. Nuestros granos de alta calidad garantizan una taza de café rica y equilibrada en todo momento.</p>
+                            <p class="card-text text-center fs-6">Una mezcla de granos arábica y robusta de la más alta calidad, este café ofrece un equilibrio perfecto de sabor, cuerpo y aroma excepcionales. Ingredientes: frijoles arábica y robusta. Sabor fuerte y chocolate importado de Italia.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-tope img-size flip-card-front" src="img/cafeimperial.png"  alt="madarines">
+                        <img class="card-img-tope img-size flip-card-front" src="/img/productos/lavazza-espresso.png"  alt="Espresso">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestro café se cosecha en el norte de Brasil, donde es conocido por su sabor único y delicioso. Nuestros granos de alta calidad garantizan una taza de café rica y equilibrada en todo momento.</p>
+                            <p class="card-text text-center fs-6">Una mezcla de variedades Arábica de América Central y del Sur crea un delicioso café tostado con notas altamente aromáticas que se manifiestan en cada sorbo de cuerpo intenso.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
-                        <img class="card-img-tope img-size flip-card-front" src="img/cafeimperial.png"  alt="madarines">
+                        <img class="card-img-tope img-size flip-card-front" src="/img/productos/lavazza-super-crema.png"  alt="super crema">
                         <div class="card-body flip-card-back">
-                            <p class="card-text text-center fs-6">Nuestro café se cosecha en el norte de Brasil, donde es conocido por su sabor único y delicioso. Nuestros granos de alta calidad garantizan una taza de café rica y equilibrada en todo momento.</p>
+                            <p class="card-text text-center fs-6">Una mezcla de variedades Arábica de Brasil, Colombia e India y Robustas de Indonesia y Vietnam crea un tueste de espresso medio suave y cremoso. Sabrás toques de miel, almendras y frutas secas con cada sorbo aterciopelado.</p>
                         </div>
                     </div>
                 </div>
@@ -181,8 +197,8 @@
             </div>
 
 
-            <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+            <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
