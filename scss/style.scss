@@ -66,7 +66,7 @@ h3 {
     img {
       padding: 1rem;
       height: 15rem;
-      object-fit: contain;
+      object-fit: cover;
     }
     .card-text {
       color: $white-text;
@@ -122,8 +122,10 @@ h3 {
 
 .pagination {
   li {
+    background-color: $color-tarjeta;
     a {
-      color: $black-text;
+      background-color: $color-tarjeta;
+      color: $white-text;
     }
   }
 }
@@ -138,6 +140,23 @@ h3 {
       input {
         background-color: #2a2c31;
       }
+    }
+  }
+}
+nav {
+  .breadcrumb {
+    .breadcrumb-item {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+#blog {
+  .row {
+    div > .card {
+      margin: 0.5rem 0rem;
+      text-align: end;
     }
   }
 }
