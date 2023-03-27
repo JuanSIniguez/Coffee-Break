@@ -1,9 +1,10 @@
 $color-tarjeta: #3e4147;
-$primary: #fffedf;
+$primary: white;
 $secondary: #626266;
 $h1-font-size: 3.5rem;
 $font-family-base: "Open Sans";
 $white-text: #ffeeec;
+$black-text: #2a2c31;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -116,5 +117,27 @@ h3 {
 #compra {
   p {
     font-size: large;
+  }
+}
+
+.pagination {
+  li {
+    a {
+      color: $black-text;
+    }
+  }
+}
+
+.sidebar {
+  .dropdown {
+    .btn {
+      width: 10rem;
+    }
+    .form-check {
+      font-size: 15px;
+      input {
+        background-color: #2a2c31;
+      }
+    }
   }
 }

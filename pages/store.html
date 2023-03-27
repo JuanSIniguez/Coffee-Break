@@ -40,31 +40,149 @@
         </div>
     </nav>
 
-    <!------------------------------ Migas de pan ------------------------------>
 
-    <nav style="--bs-breadcrumb-divider: '-';" aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-center">
-          <li class="breadcrumb-item "><a class="h3" href="/index.html">Inicio</a></li>
-          <li class="breadcrumb-item h3 active" aria-current="page">Tienda</li>
-        </ol>
-      </nav>
 
+    <!------------------------------ Productos ------------------------------>
+
+        <!------------------------------ Orden ------------------------------>
     <div class="container-fluid row">
-        <div class="col-3">
-            <h3>Pagina de filtros</h3>
-            <ul>
-                <p>Categorias</p>
-                <li>Tipo de molienda</li>
-                <li>Envío gratis</li>
-                <li>Tostados</li>
-                <li>Origen</li>
-                <li>Categoria</li>
-                <li>etc</li>
-                <li>etc </li>
-            </ul>
+        <div class="dropdown py-3 text-end px-5">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Ordenar por: 
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Precio - Mayor a menor</a></li>
+                <li><a class="dropdown-item" href="#">Precio - Menor a mayor</a></li>
+                
+                </ul>
+          </div>
+        <div class="row">
+            <!------------------------------ Migajas ------------------------------>
         </div>
+        <div class="sidebar col-lg-3 col-md-3 col-sm-12 py-3">
+            <nav style="--bs-breadcrumb-divider: '-';" aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-start">
+                  <li class="breadcrumb-item "><a class="h3" href="/index.html">Inicio</a></li>
+                  <li class="breadcrumb-item h3 active" aria-current="page">Tienda</li>
+                </ol>
+            </nav>
+        <!------------------------------ Filtros  ------------------------------>
+            <div class="dropdown my-1">
+                <button class="btn btn-secondary dropdown-toggle" type="button  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Por origen
+                </button>  
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckDefault">
+                          Oceania
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Africa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Sudamerica
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            America Central
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Europa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Blend
+                        </label>
+                    </div>
+                </ul>
+            </div>    
 
-        <div class="col-9">
+            <div class="dropdown my-1">
+                <button class="btn btn-secondary dropdown-toggle" type="button  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Por Tostado
+                </button>  
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Levemente tostado
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Suave
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Medio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Intenso
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Muy intenso
+                        </label>
+                    </div>
+                </ul>
+            </div>    
+
+            <div class="dropdown my-1">
+                <button class="btn btn-secondary dropdown-toggle" type="button  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Por Molido
+                </button>  
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Molido fino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Molido medio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            Molido grueso
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h5" for="flexCheckChecked">
+                            En Grano
+                        </label>
+                    </div>
+                </ul>
+            </div>    
+        </div>
+            <!------------------------------ productos ------------------------------>
+        <div class="col-lg-9 col-md-9 col-sm12">
             <div class="row mx-3 py-3">
                 <div class="flip-card col-lg-3 col-md-6 col-sm-12 my-3">
                     <div class="card flip-card-inner">
@@ -168,6 +286,17 @@
 
             </div>
         </div>
+
+        <nav>
+            <ul class="pagination justify-content-end">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link text-black" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+    </div>
 </div>
 
 
