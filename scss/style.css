@@ -11858,4 +11858,12 @@ nav .breadcrumb .breadcrumb-item a {
 #blog .row div > .card {
   margin: 0.5rem 0rem;
   text-align: end;
+}
+
+.posteos p {
+  padding: 0.5rem 0;
+  font-size: x-large;
+}
+.posteos ul > li {
+  font-size: x-large;
 }/*# sourceMappingURL=style.css.map */
